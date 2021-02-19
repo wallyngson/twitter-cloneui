@@ -109,7 +109,17 @@ export const LocationIcon = styled(LocationOn)`${iconsCSS}`
 export const CakeIcon = styled(Cake)`${iconsCSS}` 
 
 export const EditButton = styled(Button)`
-  
+  position: absolute;
+  top: 2vw;
+  right: 7px;
 
+  padding: 4px 16px;
+  font-size: 13px;
+
+  @media (min-width: 320px) {
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
 
 `

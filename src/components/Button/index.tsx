@@ -7,31 +7,32 @@ interface Props {
 export default styled.button<Props>`
   background: ${(props) => 
     (props.outlined 
-    ? 'transparent' 
-    : 'var(--twitter')};
+      ? 'transparent'  
+      : 'var(--twitter)')};
 
   color: ${(props) => 
     (props.outlined 
-    ? 'var(--twitter)' 
-    : 'var(--white)')};
+      ? 'var(--twitter)' 
+      : 'var(--white)')};
 
   border: ${(props) => 
     (props.outlined 
-    ? '1px solid var(--twitter)' 
-    : 'none')};
+      ? '1px solid var(--twitter)' 
+      : 'none')};
 
   padding: 16px;
   border-radius: 25px;
+
   font-weight: bold;
   font-size: 15px;
 
   cursor: pointer;
   outline: 0;
-
+  
   &:hover {
-    background: ${(props) => 
-      (props.outlined         
-        ? 'var(--twitter-dark-hover)' 
-        : 'var(--twitter-ligth-hover)')};
-  };
-`
+    background: ${(props) =>
+      props.outlined
+        ? 'var(--twitter-dark-hover)'
+        : 'var(--twitter-light-hover)'};
+  }
+`;

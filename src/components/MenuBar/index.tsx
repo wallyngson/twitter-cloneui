@@ -55,7 +55,9 @@ const MenuBar: React.FC = () => {
       </TopSide>
 
       <BotSide> 
-        <Avatar />
+        <Avatar>
+          <img src={require('../../images/avatar-wally.png').default} />
+        </Avatar>
 
         <ProfileData>
           <strong>Wallyngson Guedes</strong>

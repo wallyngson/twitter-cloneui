@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Feed from '../Feed'
 
 import { Container, 
@@ -9,13 +8,20 @@ import { Container,
          LocationIcon,
          CakeIcon,
          Followage,
-         EditButton } from './styles';
+         EditButton} from './styles';
 
 const ProfilePage: React.FC = () => {
+  
   return (
     <Container>
       <Banner>
-        <Avatar />
+        
+        <img src={require('../../images/banner-profile.png').default} />
+        <Avatar>
+          <img src={require('../../images/avatar-wally.png').default} />
+        </Avatar>
+
+        
       </Banner>
 
       <ProfileData>

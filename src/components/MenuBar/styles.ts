@@ -137,8 +137,12 @@ export const Avatar = styled.div`
 
   flex-shrink: 0;
 
-  border-radius: 50%;
-  background: var(--gray);
+  > img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%
+  }
 ` 
 export const ProfileData = styled.div`
   display: none;

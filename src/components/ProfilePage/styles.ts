@@ -2,6 +2,10 @@ import styled, { css }from "styled-components";
 import { LocationOn, Cake } from '../../styles/Icons'
 import Button from '../Button'
 
+import AvatarProfile from '../../images/banner-profile.png'
+
+// import BannerProfile from '../../images/banner-profile.png'
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,6 +28,11 @@ export const Banner = styled.div`
   background: var(--twitter);
   
   position: relative;
+
+  > img {
+    width: 100%;
+    height: 100%;
+  }
 `
 
 export const Avatar = styled.div`
@@ -31,12 +40,17 @@ export const Avatar = styled.div`
   height: max(45px, min(135px, 22vw));
 
   border: 3px solid var(--primary);
-  background: var(--gray);
   border-radius: 50%;
 
   position: absolute;
   bottom: max(-60px, -10vw);
   left: 15px;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 ` 
 
 export const ProfileData = styled.div`
@@ -121,5 +135,4 @@ export const EditButton = styled(Button)`
     padding: 10px 19px;
     font-size: 15px;
   }
-
 `

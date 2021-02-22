@@ -44,7 +44,39 @@ export default createGlobalStyle`
       background: var(--primary)
     }
 
+    @keyframes fadeIn { 
+      from { opacity: 0; } 
+    }
 
+    .loading-img {
+
+      width: 70px;
+      height: 70px;
+      display: flex;
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -35px;
+      margin-left: -35px;
+      animation: fadeIn 2s infinite alternate;
+
+      @media (min-width: 1280px) {
+
+        width: 90px;
+        height: 90px;
+
+        display: flex;
+        position: absolute;
+
+        top: 50vh;
+        left: 50vw;
+        margin-top: -45px;
+        margin-left: -45px;
+
+      }
+
+    }
   `
 
 

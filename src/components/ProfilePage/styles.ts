@@ -4,8 +4,6 @@ import Button from '../Button'
 
 import AvatarProfile from '../../images/banner-profile.png'
 
-// import BannerProfile from '../../images/banner-profile.png'
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

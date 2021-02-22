@@ -51,6 +51,7 @@ export const MenuButton = styled.button`
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  
 
   > span {
     display: none;
@@ -68,7 +69,8 @@ export const MenuButton = styled.button`
     padding-right: 15px;
   }
 
-  padding: 8.25px 0;
+  margin-left: -5px;
+  padding: 10px 10px;
   outline: 0;
 
   & + button {
@@ -100,6 +102,8 @@ export const MenuButton = styled.button`
 
   &:hover {
     color: var(--twitter-dark-hover);
+    background-color: var(--twitter-dark-hover);
+
   }
 
   &:hover, &.active {

@@ -5,22 +5,39 @@ export const Container = styled.div`
   flex-direction: column;
 `
 
-export const Tab = styled.div`
-  margin-top: 10px;
-  padding: 11px 0 15px;
-  text-align: center;
+export const Timelines = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 0.2px solid var(--outline);
+  margin-top: 20px;
+`
 
+export const Tab = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  
+ 
+  padding: 11px 11px 15px;
   font-weight: bold;
   font-size: 15px;
 
-  outline: 0;
   cursor: pointer;
-
-  color: var(--twitter);
-  border-bottom: 2px solid var(--twitter);
-
+  color: var(--gray);
+    
   &:hover {
     background: var(--twitter-dark-hover);
+    color: var(--twitter);
+    border-bottom: 2px solid var(--twitter-dark-hover);
+  }
+
+  &.active {
+    background: var(--twitter-dark-hover);
+    color: var(--twitter);
+    border-bottom: 2px solid var(--twitter);
   }
 `
 
